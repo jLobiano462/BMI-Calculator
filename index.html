@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <meta name ='application-name' content ='BMI-Calculator'>
+  <meta http-equiv="X-UA-Compatible" content = 'IE=edge'>
+  <meta name="viewport" content = 'width=device-width, initial-scale = 1.0'>
+  <link rel = 'stylesheet' href ='main.css' type = 'text/css'>
+  <title>BMI-Calculator</title>
+
+</head>
+
+<body>
+  <header>
+    <div class= 'title'>
+      <div class='line'></div><h1>BMI Calculator</h1><div class ='line'></div>
+    </div>
+    <sub>Calculate your BMI fast</sub>
+  </header>
+
+  <main>
+    <div class='contain'>
+      <label for='units'>Choose the units you want to use</label>
+      <select id ='units' name='units'>
+        <option value='standard'>Standard Units</option>
+        <option value = 'english'>English System</option>
+      </select>
+      <div id='input-form'>
+      <div class='input-contents'>
+
+        <input class='weight' type="number" placeholder="Enter your weight:">
+        <p class='weightUnit'>in kilograms</p>
+
+
+        <input class='height' type="number" placeholder="Enter your height:">
+        <p class='heightUnit'>in meters</p>
+
+        <button id='getBMI'>Get BMI</button>
+
+      </div>
+      </div>
+
+    </div>
+
+
+    <div class='result-content'>
+      <div class='result-container'>
+      <p class = 'result'>Your BMI:</p>
+      </div>
+      <div class ='categories'>
+        <div class ='underweight'>
+          <h3>Underweight</h3>
+          <p><18.5</p>
+
+        </div>
+
+        <div class = 'normal'>
+          <h3>Normal weight</h3>
+          <p>18.5 - 25</p>
+
+
+        </div>
+
+        <div class = 'overweight'>
+          <h3>Overweight</h3>
+          <p>25-30</p>
+
+
+        </div>
+
+        <div class = 'obese'>
+          <h3>Obese</h3>
+          <p>>30</p>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+
+
+  <footer>
+    <div class='copyright'>
+      <h3>Jero Matthew T. Lobiano</h3>
+      <sub>Developer</sub>
+
+    </div>
+
+  </footer>
+
+
+
+<script src ='main.js'></script>
+</body>
+
+
+
+
+
+</html>

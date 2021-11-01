@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p, sub {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.05rem;
+  background: #f2d9d8;
+  font-family: sans-serif;
+}
+
+header {
+  background: #b8453d;
+  min-width: 100%;
+  text-align: center;
+  font-family: "Bungee Inline", sans-serif;
+  box-shadow: 0px 2px 3px black;
+  margin-bottom: 1em;
+}
+header .title {
+  font-size: 0.75rem;
+  margin: 0 auto;
+  min-width: 85%;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1.55em 1em;
+  justify-content: center;
+}
+header .title .line {
+  width: 25%;
+  border: 1px solid black;
+  height: 1%;
+  margin: 0 0.55em;
+}
+header .title h1 {
+  line-height: 1.1;
+}
+
+main {
+  max-width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+main .contain {
+  padding: 0.55em;
+  width: 100%;
+}
+main .contain label {
+  display: block;
+  font-family: "Bungee Inline", sans-serif;
+}
+main .contain #units {
+  background: transparent;
+  border: none;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+}
+main .contain #input-form {
+  color: #b8453d;
+  background: white;
+  border-radius: 5px;
+  padding: 1em;
+  border: 2px solid #b8453d;
+}
+main .contain #input-form .input-contents {
+  display: flex;
+  flex-direction: column;
+}
+main .contain #input-form .input-contents .weight, main .contain #input-form .input-contents .height {
+  background: transparent;
+  border: none;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #b8453d;
+}
+main .contain #input-form .input-contents .weight:focus, main .contain #input-form .input-contents .height:focus {
+  outline: none !important;
+}
+main .contain #input-form .input-contents #getBMI {
+  background: #b8453d;
+  padding: 0.55em;
+  margin: 1em 0;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s linear;
+}
+main .contain #input-form .input-contents #getBMI:hover {
+  background: #f2d9d8;
+  color: #b8453d;
+  border: 1px solid #b8453d;
+}
+main .result-content {
+  font-family: "Bungee Inline", sans-serif;
+  color: white;
+}
+main .result-content .result-container {
+  padding: 1.5em;
+  border-radius: 5px;
+  margin: 1em 0;
+  text-shadow: 0 1px 2px black;
+  background: #b8453d;
+}
+main .result-content .categories {
+  display: flex;
+  flex-direction: column;
+}
+main .result-content .categories .underweight {
+  background: #f5db58;
+  padding: 1.5em;
+  border-radius: 5px;
+  margin: 1em 0;
+  text-shadow: 0 1px 2px black;
+}
+main .result-content .categories .normal {
+  background: #27ba1a;
+  padding: 1.5em;
+  border-radius: 5px;
+  margin: 1em 0;
+  text-shadow: 0 1px 2px black;
+}
+main .result-content .categories .overweight {
+  background: #e69c25;
+  padding: 1.5em;
+  border-radius: 5px;
+  margin: 1em 0;
+  text-shadow: 0 1px 2px black;
+}
+main .result-content .categories .obese {
+  background: #362203;
+  padding: 1.5em;
+  border-radius: 5px;
+  margin: 1em 0;
+  text-shadow: 0 1px 2px black;
+}
+
+@media (min-width: 60rem) {
+  main {
+    max-width: 55%;
+  }
+  main .contain #input-form {
+    text-align: center;
+  }
+  main .contain #input-form .input-contents {
+    align-items: center;
+  }
+  main .contain #input-form .input-contents #getBMI {
+    width: 35%;
+    margin: 1em 0;
+  }
+  main .result-content .categories {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.75rem;
+  }
+  main .result-content .categories div {
+    width: 23%;
+    overflow: hidden;
+  }
+}
+footer {
+  min-width: 100%;
+  background: #b8453d;
+  padding: 1.5em 0;
+  box-shadow: 0px -2px 3px black;
+}
+footer .copyright {
+  padding: 1em;
+  text-align: center;
+  font-family: "Bungee Inline", sans-serif;
+  color: white;
+  text-shadow: 0 1px 2px black;
+}
+footer .copyright sub {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
